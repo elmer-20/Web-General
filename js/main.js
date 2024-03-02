@@ -1,10 +1,3 @@
-// Redireccionar a una URL sin .html
-window.onload = function() {
-    if (window.location.pathname.endsWith('.html')) {
-      window.location.replace(window.location.pathname.slice(0, -5));
-    }
-  };
-
 (function ($) {
     "use strict";
 
