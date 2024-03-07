@@ -214,6 +214,38 @@
             </div>
         </div>
     </div>
+	<div class="container max-w-2xl mx-auto">
+                <h5 class="fw-bold text-primary text-uppercase pb-1 py-5">VER LISTA DE INGRESANTES</h5>
+                <button id="openModal" class="btn btn-primary px-4 py-2 rounded">Ver PDF</button>
+        </div>
+    
+        <div id="pdfModal" class="modal fade">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark text-light">
+                        <h5 class="modal-title">PDF Viewer</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe id="pdfViewer" style="width: 100%; height: 80vh;" frameborder="0"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="closeModal" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <script>
+        document.getElementById('openModal').addEventListener('click', function() {
+            document.getElementById('pdfViewer').src = "/pdf/test.pdf";
+            $('#pdfModal').modal('show');
+        });
+    
+        document.getElementById('closeModal').addEventListener('click', function() {
+            $('#pdfModal').modal('hide');
+        });
+    </script>
     <!-- Vendor End -->
     
 
