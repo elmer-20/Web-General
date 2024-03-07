@@ -175,22 +175,18 @@
     <div class="container-fluid  facts py-5 pt-lg-0">
         <div class="container py-1  pt-lg-0">
             <div class="row gx-0 justify-content-center">
-                <!-- <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
                     <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
                         <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-map-marker-alt text-primary"></i>
+                            <i class="fa fa-book text-primary"></i>
                         </div>
                         <div class="ps-4">
-                            <h5 class="text-white mb-0">Puertas de Ingreso</h5>
-                            <ul class="text-white mb-0">
-                                <li>Entrada Ingenierias</li>
-                                <li>Entrada Sociales</li>
-                                <li>Entrada Biomedicas</li>
-                            </ul>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">12345</h1>
+                            <h5 class="text-white mb-0">Prospecto de Admisión</h5>
+                            <button type="button" class="bg-light text-primary btn btn-primary px-4 py-2 rounded"
+                                onclick="window.open('/pdf/test.pdf', '_blank')">Descargar PDF</button>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
                     <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
                         <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
@@ -444,6 +440,45 @@
                         </div>
                       
                     </div>
+			<div class="bg-white rounded shadow position-relative" style="z-index: 1;">
+                        <div class="container max-w-2xl mx-auto p-5 pt-0">
+                            <h5 class="fw-bold text-primary text-uppercase pb-1 py-5">PROSPECTO DE Admisión</h5>
+                            <button id="openModal" class="btn btn-primary px-4 py-2 rounded">Ver PDF</button>
+                            <button type="button" class="btn btn-primary px-4 py-2 rounded"
+                                onclick="window.open('/pdf/test.pdf', '_blank')">Descargar PDF</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pdfModal" class="modal fade">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-light">
+                                <h5 class="modal-title">PDF Viewer</h5>
+                                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe id="pdfViewer" style="width: 100%; height: 80vh;" frameborder="0"></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="closeModal" type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    document.getElementById('openModal').addEventListener('click', function () {
+                        document.getElementById('pdfViewer').src = "/pdf/prospecto2024.pdf";
+                        $('#pdfModal').modal('show');
+                    });
+
+                    document.getElementById('closeModal').addEventListener('click', function () {
+                        $('#pdfModal').modal('hide');
+                    });
+                </script>
 
                     <!-- <div class="wow slideInUp py-3 shadow" data-wow-delay="0.1s">
                         <div class="section-title section-title-sm position-relative py-4 pb-3 mb-4">
