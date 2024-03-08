@@ -102,19 +102,19 @@
                         <div class="dropdown-menu m-0">
                             <a href="" class="dropdown-item">Examen General</a>
                             <a href="" class="dropdown-item">Examen Extraordinario</a>
-                            <a href="" class="dropdown-item">Examen Cepreuna</a>
+                            <a href="" class="dropdown-item">Examen CEPREUNA</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
                         <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Programas</a>
                         <div class="dropdown-menu m-0">
-                            <a href="" class="dropdown-item">Ingenierias</a>
+                            <a href="" class="dropdown-item">Ingenierías</a>
                             <a href="" class="dropdown-item">Biomedicas</a>
                             <a href="" class="dropdown-item">Sociales</a>
                            
                         </div>
                     </div>
-                    <a href="" class="nav-item nav-link">Contactanos</a>
+                    <a href="" class="nav-item nav-link">Contáctenos</a>
                 </div>
                 <!-- <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton> -->
                 <a href="https://resultados.unap.edu.pe/estraordinario2024-1.txt" class="btn btn-primary py-2 px-4 ms-3">Resultados Extraordinario</a>
@@ -137,6 +137,15 @@
                                     <h3 class="text-white  mb-3 animated slideInDown">INGRESO POR LA PUERTA PRINCIPAL</h3>
                                 </div>                               
                             </div> -->
+                             <div>
+                                <div class="text-center text-gray-50 flex-1">
+                                    <h3 class="text-white  mb-3 animated slideInDown">Estimados Postulantes cuyo  <span class="text-bold">ultimo dígito del DNI es "4"</span></h3>
+                                    <h3 class="text-white  mb-3 animated slideInDown">Falta:</h3>
+                                    <div id="countdown" class="display-1 text-white mb-md-4 animated zoomIn"></div>
+                                    <h4 class="text-white  mb-3 animated slideInDown">Para que se Aperture las Inscripciones Presenciales</h4>
+                                    <h4 class="text-white  mb-3 animated slideInDown">Lugar: Campus Universitario Edificio de 15 Pisos</h4>
+                                </div>                               
+                            </div> 
                             <a href="https://inscripciones.admision.unap.edu.pe/general-2024-I/preinscripcion" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Preinscripciones</a>
                             <!-- <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a> -->
                         </div>
@@ -182,8 +191,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="text-white mb-0">Prospecto de Admisión</h5>
-                            <button type="button" class="bg-light text-primary btn btn-primary px-4 py-2 rounded"
-	                                onclick="window.open('/pdf/reglamento-2024.pdf', '_blank')">VER</button>
+                            <button type="button" class="bg-light text-primary btn btn-primary px-4 py-2 rounded" onclick="window.open('/pdf/reglamento-2024.pdf', '_blank')">VER</button>
                         </div>
                     </div>
                 </div>
@@ -444,8 +452,8 @@
                         <div class="container max-w-2xl mx-auto p-5 pt-0">
                             <h5 class="fw-bold text-primary text-uppercase pb-1 py-5">PROSPECTO DE Admisión</h5>
                             <button id="openModal" class="btn btn-primary px-4 py-2 rounded">Ver PDF</button>
-                            <button type="button" class="btn btn-primary px-4 py-2 rounded"
-                                onclick="window.open('/pdf/reglamento-2024.pdf', '_blank')">Descargar PDF</button>
+                            <!-- <button type="button" class="btn btn-primary px-4 py-2 rounded"
+                                onclick="window.open('/pdf/reglamento-2024.pdf', '_blank')">Descargar PDF</button> -->
                         </div>
                     </div>
                 </div>
@@ -478,6 +486,7 @@
                     document.getElementById('closeModal').addEventListener('click', function () {
                         $('#pdfModal').modal('hide');
                     });
+                    
                 </script>
 
                     <!-- <div class="wow slideInUp py-3 shadow" data-wow-delay="0.1s">
