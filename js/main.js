@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
     "use strict";
 
     // Spinner
-    var spinner = function () {
+    let spinner = function () {
         setTimeout(function () {
             if ($('#spinner').length > 0) {
                 $('#spinner').removeClass('show');
