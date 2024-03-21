@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const countdownElement = document.getElementById('countdown');
-    const targetDate = new Date("March 08, 2024 08:00:00").getTime();
+    const targetDate = new Date("March 22, 2024 05:00:00").getTime();
 
     const countdownInterval = setInterval(function () {
         const currentDate = new Date().getTime();
