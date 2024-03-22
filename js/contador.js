@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const countdownElement = document.getElementById('countdown');
-    const targetDate = new Date("March 22, 2024 05:00:00").getTime();
+    const targetDate = new Date("March 23, 2024 06:00:00").getTime();
 
     const countdownInterval = setInterval(function () {
         const currentDate = new Date().getTime();
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (difference < 0) {
             clearInterval(countdownInterval);
-            countdownElement.innerHTML = '¡Llegó la Hora!';
+            countdownElement.innerHTML = 'HORA DEL EXAMEN';
         }
     }, 1000);
 });
